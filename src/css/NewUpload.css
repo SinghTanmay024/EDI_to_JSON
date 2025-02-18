@@ -1,0 +1,70 @@
+/* NewUpload.css */
+.upload-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  /* Style for the upload-container */
+  .upload-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:#f0f0f0 ;
+  }
+  
+  /* Style for the h1 element */
+  .upload-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the form */
+  .upload-container form {
+    margin-bottom: 30px;
+  }
+  
+  /* Style for the label */
+  .upload-container label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the input[type="file"] */
+  .upload-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the button */
+  .upload-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style for the button:hover */
+  .upload-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the JsonViewer */
+  .upload-container .JsonViewer {
+    margin-top: 20px;
+  }
+  

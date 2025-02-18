@@ -1,0 +1,295 @@
+.finalJSON-textarea {
+  position: sticky;
+  top: 125px;
+  font-family: monospace;
+
+}
+
+.finalJSON-textarea::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.finalJSON-textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+}
+
+.finalJSON-textarea::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+}
+
+.selected-element-container {
+  background-color: #f8f9fa;
+  border: 1px solid #000000;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  height: 80vh;
+  overflow: scroll;
+}
+
+
+
+
+:root {
+  --border-gradient: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.JsonPathContainer {
+  margin: 10px; 
+  padding: 10px;
+  border-width: 6px; 
+  border-style: solid; 
+  border-image: var(--border-gradient) 1; 
+  overflow-x: auto;
+}
+.JsonPath {
+  width: 100%;
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; 
+  position: relative;
+  
+}
+.dropdown-custom-sub {
+  position: relative; 
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px;
+  width: 200px; 
+  border: 1px solid #ced4da; 
+  background-color: #ffffff; 
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.dropdown-custom-file {
+  position: relative; 
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px;
+  margin: 2px;
+  width: 200px; 
+  border: 1px solid #ced4da; 
+  background-color: #ffffff; 
+  padding: 10px; 
+  cursor: pointer;
+}
+.dropdown-custom-dep {
+  position: relative; 
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px;
+  width: 200px; 
+  border: 1px solid #ced4da; 
+  background-color: #ffffff; 
+  padding: 10px; 
+  cursor: pointer;
+}
+.dropdown-custom-pat {
+  position: relative; 
+  display: inline-block;
+  width: 200px; 
+  border: 1px solid #ced4da; 
+  background-color: #ffffff; 
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.dropdown-custom select {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-custom::after {
+  content: "\25BC"; 
+  position:fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Hover effect */
+.dropdown-custom:hover {
+  background-color: #f8f9fa; 
+}
+
+
+
+textarea {
+  background-color: #f8f9fa;
+  border: 7px solid transparent; /* Set a transparent border */
+  
+  padding: 1rem 0.75rem 0.375rem; 
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  width: 70%;
+  height: 80vh;
+  overflow: scroll;
+  margin-top: 4rem;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.subscriber-container {
+  background-color: #f8f9fa;
+  border: 1px solid #000000;
+   
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  height: 80vh;
+  overflow: scroll;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info-image {
+  width: 35px; 
+  height: 35px; 
+  margin-left: 10px; 
+}
+
+
+.dependent-container {
+  background-color: #f8f9fa;
+  border: 1px solid #000000;
+  
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  height:80vh;
+  overflow:scroll;
+}
+.patient-container {
+  background-color: #f8f9fa;
+  border: 1px solid #000000;
+  
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  height:80vh;
+  overflow:scroll;
+}
+.img-upload {
+  width: 60px;
+  height: auto;
+}
+
+.subscriber-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.subscriber-container::-webkit-scrollbar-track {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+}
+
+.subscriber-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+  border-radius: 10px;
+}
+
+.dependent-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dependent-container::-webkit-scrollbar-track {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+}
+
+.dependent-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );  
+  border-radius: 10px;
+}
+.patient-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.patient-container::-webkit-scrollbar-track {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+  
+}
+
+.patient-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 122, 153, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); 
+  border-radius: 10px;
+}
+
+
+.ClipboardButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ClipboardIcon {
+  width: 40px;
+  height: 40px;
+}

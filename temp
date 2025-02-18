@@ -1,0 +1,9 @@
+id={`${patientDataDisplay[1]["patNumber"]}|${patientDataDisplay[2]["depNumber"]}|${patientDataDisplay[3]["subNumber"]}|${patientDataDisplay[3]["fileName"]}`}
+                          value={
+                            intermediate[patientDataDisplay[3]["fileName"]][
+                              "payload"
+                            ][firstKey][patientDataDisplay[3]["subNumber"]][
+                              secondKey
+                            ][patientDataDisplay[2]["depNumber"]][thirdKey][
+                              patientDataDisplay[1]["patNumber"]
+                            ][field]

@@ -1,0 +1,42 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  max-width: 400px;
+  /* border: 1px solid #ccc;  */
+
+}
+
+.elements-container{
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  font-size: 1.5rem;
+  box-shadow: 10px 10px 10px;
+  background-color: rgba(255, 0, 0, 0.098);
+  opacity: 0; /* Initially set to fully transparent */
+  position: relative;
+  top: -50px; /* Start position above its final position */
+  animation: dropIn 0.5s forwards; 
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  margin: 0;
+  
+}
+
+
+
+@keyframes dropIn {
+  from {
+    opacity: 0; /* Start from fully transparent */
+    top: -50px; /* Start position above its final position */
+  }
+  to {
+    opacity: 1; /* End at fully opaque */
+    top: 0; /* End at its final position */
+  }
+}

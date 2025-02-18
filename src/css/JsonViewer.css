@@ -1,0 +1,14 @@
+.json-viewer-container {
+    height: 60vh;
+  }
+  
+  .json-viewer-col {
+    height: 50vh;
+    overflow: scroll;
+  }
+  
+  .json-viewer-dropdown {
+    height: 80vh;
+    overflow: scroll;
+  }
+  
