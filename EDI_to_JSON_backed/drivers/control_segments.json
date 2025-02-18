@@ -1,0 +1,468 @@
+{
+  "ST": {
+    "parent": [
+      "GS"
+    ],
+    "child": [
+      ""
+    ],
+    "usage": "R",
+    "repeat": ">1",
+    "segment_name": "ST",
+    "segment_desc": "Transaction Set Header",
+    "identifier_element": -1,
+    "possible_values": [],
+    "elements": [
+      {
+        "element_name": "ST01",
+        "element_desc": "Transaction Set Identifier Code",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "3",
+        "max": "3",
+        "possible_values": []
+      },
+      {
+        "element_name": "ST02",
+        "element_desc": "Transaction Set Control Number",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "4",
+        "max": "9",
+        "possible_values": [
+          ""
+        ]
+      },
+      {
+        "element_name": "ST03",
+        "element_desc": "Implementation Convention Reference",
+        "data_type": "AN",
+        "requirment": "O",
+        "repeat": "1",
+        "min": "35",
+        "max": "50",
+        "possible_values": [
+          ""
+        ]
+      }
+    ]
+  },
+  "GS": {
+    "parent": [
+      "ISA"
+    ],
+    "child": [
+      "GE","ST"
+    ],
+    "usage": "R",
+    "repeat": ">1",
+    "segment_name": "GS",
+    "segment_desc": "Functional Group Header",
+    "identifier_element": -1,
+    "possible_values": [],
+    "elements": [
+      {
+        "element_name": "GS01",
+        "element_desc": "Functional Identifier Code",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "2",
+        "possible_values": []
+      },
+      {
+        "element_name": "GS02",
+        "element_desc": "Application Sender\u2019s Code",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "15",
+        "possible_values": []
+      },
+      {
+        "element_name": "GS03",
+        "element_desc": "Application Receiver\u2019s Code",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "15",
+        "possible_values": []
+      },
+      {
+        "element_name": "GS04",
+        "element_desc": "Data",
+        "data_type": "DT",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "8",
+        "max": "8",
+        "possible_values": []
+      },
+      {
+        "element_name": "GS05",
+        "element_desc": "Time",
+        "data_type": "TM",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "4",
+        "max": "8",
+        "possible_values": []
+      },
+      {
+        "element_name": "GS06",
+        "element_desc": "Group Control Number",
+        "data_type": "N0",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "9",
+        "possible_values": []
+      },
+      {
+        "element_name": "GS07",
+        "element_desc": "Responsible Agency Code",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "2",
+        "possible_values": [
+          "X"
+        ]
+      },
+      {
+        "element_name": "GS08",
+        "element_desc": "Version / Release / Industry Identifier Code",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "12",
+        "possible_values": [
+          "005010X220"
+        ]
+      }
+    ]
+  },
+  "ISA": {
+    "parent": [],
+    "child": [
+      "GS","IEA"
+    ],
+    "usage": "R",
+    "repeat": ">1",
+    "segment_name": "ISA",
+    "segment_desc": "Interchance Control Header",
+    "identifier_element": -1,
+    "possible_values": [],
+    "elements": [
+      {
+        "element_name": "ISA01",
+        "element_desc": "Authorization Information Qualifier",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "2",
+        "possible_values": [
+          "00",
+          "03"
+        ]
+      },
+      {
+        "element_name": "ISA02",
+        "element_desc": "Authorization Information",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "10",
+        "max": "10",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA03",
+        "element_desc": "Security Information Qualifier",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "2",
+        "possible_values": [
+          "00",
+          "01"
+        ]
+      },
+      {
+        "element_name": "ISA04",
+        "element_desc": "Security Information",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "10",
+        "max": "10",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA05",
+        "element_desc": "Interchange ID Qualifier",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "2",
+        "possible_values": [
+          "01",
+          "14",
+          "20",
+          "27",
+          "28",
+          "29",
+          "30",
+          "33",
+          "ZZ"
+        ]
+      },
+      {
+        "element_name": "ISA06",
+        "element_desc": "Interchange Sender ID",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "15",
+        "max": "15",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA07",
+        "element_desc": "Interchange ID Qualifier",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "2",
+        "max": "2",
+        "possible_values": [
+          "01",
+          "14",
+          "20",
+          "27",
+          "28",
+          "29",
+          "30",
+          "33",
+          "ZZ"
+        ]
+      },
+      {
+        "element_name": "ISA08",
+        "element_desc": "Interchange Receiver ID",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "15",
+        "max": "15",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA09",
+        "element_desc": "Interchange Date",
+        "data_type": "DT",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "6",
+        "max": "6",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA10",
+        "element_desc": "Interchange Time",
+        "data_type": "TM",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "4",
+        "max": "4",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA11",
+        "element_desc": "Repetition Separator",
+        "data_type": "",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "1",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA12",
+        "element_desc": "Interchange Control Version Number",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "5",
+        "max": "5",
+        "possible_values": [
+          "501"
+        ]
+      },
+      {
+        "element_name": "ISA13",
+        "element_desc": "Interchange Control Number",
+        "data_type": "N0",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "9",
+        "max": "9",
+        "possible_values": []
+      },
+      {
+        "element_name": "ISA14",
+        "element_desc": "Acknowledgment Requested",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "1",
+        "possible_values": [
+          "0",
+          "1"
+        ]
+      },
+      {
+        "element_name": "ISA15",
+        "element_desc": "Interchange Usage Indicator",
+        "data_type": "ID",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "1",
+        "possible_values": [
+          "P",
+          "T"
+        ]
+      },
+      {
+        "element_name": "ISA16",
+        "element_desc": "Component Element Separator",
+        "data_type": "",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "1",
+        "possible_values": []
+      }
+    ]
+  },
+  "IEA": {
+    "parent": [
+      "ISA"
+    ],
+    "child": [
+      ""
+    ],
+    "usage": "R",
+    "repeat": "1",
+    "segment_name": "IEA",
+    "segment_desc": "Interchance Control Tralier",
+    "identifier_element": -1,
+    "possible_values": [],
+    "elements": [
+      {
+        "element_name": "IEA01",
+        "element_desc": "Number of Included Functional Groups",
+        "data_type": "N0",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "5",
+        "possible_values": []
+      },
+      {
+        "element_name": "IEA02",
+        "element_desc": "Interchange Control Number",
+        "data_type": "N0",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "9",
+        "max": "9",
+        "possible_values": []
+      }
+    ]
+  },
+  "GE": {
+    "parent": [
+      "GS"
+    ],
+    "child": [
+      ""
+    ],
+    "usage": "R",
+    "repeat": "1",
+    "segment_name": "GE",
+    "segment_desc": "Functional Group Tralier",
+    "identifier_element": -1,
+    "possible_values": [],
+    "elements": [
+      {
+        "element_name": "GE01",
+        "element_desc": "Number of Transaction Sets Included",
+        "data_type": "N0",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "6",
+        "possible_values": []
+      },
+      {
+        "element_name": "GE02",
+        "element_desc": "Group Control Number",
+        "data_type": "N0",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "9",
+        "possible_values": []
+      }
+    ]
+  },
+  "SE": {
+    "parent": [
+      "ST"
+    ],
+    "child": [
+      ""
+    ],
+    "usage": "R",
+    "repeat": "1",
+    "segment_name": "SE",
+    "segment_desc": "Transaction Set Tralier",
+    "identifier_element": -1,
+    "possible_values": [],
+    "elements": [
+      {
+        "element_name": "SE01",
+        "element_desc": "Number of Included Segments",
+        "data_type": "NO",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "1",
+        "max": "10",
+        "possible_values": []
+      },
+      {
+        "element_name": "SE02",
+        "element_desc": "Transaction Set Control Number",
+        "data_type": "AN",
+        "requirment": "M",
+        "repeat": "1",
+        "min": "4",
+        "max": "9",
+        "possible_values": []
+      }
+    ]
+  }
+}
