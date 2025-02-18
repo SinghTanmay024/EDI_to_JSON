@@ -74,7 +74,7 @@ The frontend should now be running at `http://localhost:3000`
 ## API Endpoints
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| POST   | `/convert` | Uploads an EDI file and returns the JSON output |
+| POST   | `/upload` | Uploads an EDI file and returns the JSON output |
 
 ## Contributing
 Feel free to submit issues and pull requests!
